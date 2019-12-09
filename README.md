@@ -1,1 +1,1 @@
-# [Shampoo site test](https://startbootstrap.com/template-overviews/agency/)
+# [Shampoo site test](https://fejes6.github.io/shampoo_site/index.html)
