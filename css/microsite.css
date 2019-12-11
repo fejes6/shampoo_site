@@ -517,6 +517,29 @@ header.masthead .intro-text .intro-heading {
   margin-bottom: 0;
 }
 
+@media (min-width: 1024px){
+.top-text {
+  right: auto;
+    left: 0;
+    top: 29%;
+    max-width: 42rem;
+  }
+}
+  
+  @media (min-width: 992px){
+.top-text {
+    right: 1rem;
+    max-width: 28.5rem;
+  }
+}	
+  
+  @media (min-width: 768px){
+.top-text {
+    right: 4rem;
+    max-width: 22.5rem;
+  }
+}
+
 @media (min-width: 1200px) {
 .container-wide {
     max-width: 1903px;
