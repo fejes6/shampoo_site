@@ -142,17 +142,7 @@ img::-moz-selection {
   background-color: #fed136;
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
-/* delete
-#mainNav .navbar-brand {
-  color: #fed136;
-  font-family: 'Kaushan Script', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  font-family: 'Montserrat';
-}
 
-#mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-  color: #fec503;
-}
-*/
 #mainNav .navbar-nav .nav-item .nav-link {
   font-size: 90%;
   font-weight: 400;
@@ -192,14 +182,41 @@ img::-moz-selection {
   }
 }
 
-header.masthead {
-  text-align: center;
-  color: white;
-  background-image: url("../img/header-bg.jpg");
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center top;
-  /*background-size: cover;*/
+/* Media screen properties */
+@media screen and (max-width: 991px) {
+  header.masthead {
+    text-align: center;
+    color: white;
+    background-image: url("../img/header-bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center 56px;
+    background-size: 100%; 
+  }
+}
+
+@media screen and (min-width: 991px) and (max-width: 1400px) {
+  header.masthead {
+    text-align: center;
+    color: white;
+    background-image: url("../img/header-bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center top;
+    background-size: 1400px 546px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  header.masthead {
+    text-align: center;
+    color: white;
+    background-image: url("../img/header-bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center top;
+    /*background-size: cover;*/
+  }
 }
 
 header.masthead .intro-text {
@@ -208,17 +225,17 @@ header.masthead .intro-text {
 }
 
 header.masthead .intro-text .intro-lead-in {
-  font-size: 20px;
+  font-size: 12px;
   line-height: 22px;
   margin-bottom: 25px;
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
 header.masthead .intro-text .intro-heading {
-  font-size: 40px;
+  font-size: 20px;
   font-weight: 700;
-  line-height: 50px;
-  margin-bottom: 25px;
+  line-height: 25px;
+  /* margin-bottom: 25px; */
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
@@ -226,18 +243,19 @@ header.masthead .intro-text .intro-heading {
   header.masthead .intro-text {
     padding-top: 300px;
     padding-bottom: 200px;
+    padding-left: 80px;
   }
   header.masthead .intro-text .intro-lead-in {
-    font-size: 23px;
-    line-height: 40px;
+    font-size: 16px;
+    line-height: 28px;
     margin-bottom: 25px;
     font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   }
   header.masthead .intro-text .intro-heading {
-    font-size: 50px;
+    font-size: 30px;
     font-weight: 700;
-    line-height: 75px;
-    margin-bottom: 50px;
+    line-height: 40px;
+    /* margin-bottom: 50px; */
     font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   }
 }
@@ -259,16 +277,7 @@ header.masthead .intro-text .intro-heading {
   margin: 0 auto;
   cursor: pointer;
 }
-/*
-#portfolio .portfolio-item .portfolio-link .portfolio-hover {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  transition: all ease 0.5s;
-  opacity: 0;
-  background: rgba(254, 209, 54, 0.9);
-}
-*/
+
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
   position: absolute;
   width: 100%;
@@ -338,12 +347,16 @@ header.masthead .intro-text .intro-heading {
 
 .portfolio-modal .modal-content {
   padding: 100px 0;
-  text-align: center;
+  text-align: left;
 }
 
 .portfolio-modal .modal-content h2 {
   font-size: 3em;
   margin-bottom: 15px;
+}
+
+.portfolio-modal .modal-content .modal-center{
+  text-align: center;
 }
 
 .portfolio-modal .modal-content p {
@@ -536,7 +549,7 @@ header.masthead .intro-text .intro-heading {
   @media (min-width: 768px){
 .top-text {
     right: 4rem;
-    max-width: 22.5rem;
+    max-width: 25rem;
   }
 }
 
