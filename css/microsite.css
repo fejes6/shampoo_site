@@ -43,8 +43,6 @@ img.grayscale:hover {
   -webkit-filter: grayscale(0%);
 }
 
-
-
 /* grayscale end */
 
 h1,
@@ -89,6 +87,18 @@ h6 {
 ::selection {
   background: #fed136;
   text-shadow: none;
+}
+
+.img-shampoo {
+  max-height: 350px;
+  transition: all 0.5s;
+  transform-origin: bottom;
+}
+
+.img-shampoo:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
 }
 
 img::-moz-selection {
@@ -751,3 +761,5 @@ ul.social-buttons li a {
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
   background-color: #fed136;
 }
+
+.animate-opacity{position:relative;animation:animateright 2.4s}@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
